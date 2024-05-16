@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 04</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional CSS for responsiveness */
+        .img {
+            background-size: contain;   
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 530px; /* Adjust as needed */
+        }
+
+        .login-wrap {
+            max-width: 600px; /* Adjust as needed */
+            width: 100%;
+            margin: auto;
+        }
+
+        .form-control {
+            width: 100%;
+        }
+
+        .submit {
+            width: 100%;
+        }
+
+        .welcome-text {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .img {
+                height: 200px; /* Adjust as needed */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .img {
+                height: 150px; /* Adjust as needed */
+            }
+        }
+
+        .attendance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        
+
+        .attendance-table th {
+            border-right: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    <div class="wrap d-md-flex">
+                        <div class="img" style="background-image: url(images/Logo1.png);"></div>
+                        <div class="login-wrap p-4 p-md-5">
+                            <div class="d-flex">
+                                <div class="container">
+                                    <div class="welcome-text">
+                                        <img src="images/Logo1.png" style="width:100px" alt="Application Logo">
+                                        <h3 class="mb-4">Welcome to PACC</h3>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <form action="#" class="login-form">
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Domain:" required>
+                                        </div>
+                                        <table class="attendance-table">
+                                            <tr>
+                                                <th>Time in</th>
+                                                <th>Student Number</th>
+                                                <th>Status</th>
+                                            </tr>
+                                            <tr>
+                                                <td>9:00am</td>
+                                                <td>20221865</td>
+                                                <td>On-Time</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9:15am</td>
+                                                <td>20221655</td>
+                                                <td>On-Time</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9:15am</td>
+                                                <td>20221364</td>
+                                                <td>On-Time</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9:30am</td>
+                                                <td>20200165</td>
+                                                <td>On-Time</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9:45am</td>
+                                                <td>20229955</td>
+                                                <td>On-Time</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10:00am</td>
+                                                <td>20226245</td>
+                                                <td>Late</td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
